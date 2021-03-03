@@ -64,26 +64,37 @@ p {
     margin-right: 25px;
 }
 
+
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/*added flexbox to content*/
 .content {
-    width: 75%;
-    display: inline-block;
     margin-left: 20px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*converted full-content to a flex-box */
+.full-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .benefits {
     margin-right: 20px;
     padding: 20px;
     clear: both;
-    float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* condensed benefit lead/brand/cost into one style class */
