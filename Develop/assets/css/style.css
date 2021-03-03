@@ -26,11 +26,10 @@ body {
 .header h1 .seo {
     color: #d9dcd6;
 }
-/*changed .header div {} to .nav {} class removed float*/
+/*changed .header div {} to .nav {} class removed float/padding*/
 .nav {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
     margin: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -73,6 +72,12 @@ p {
     margin-left: 25px;
 }
 
+/*created .full-content class/converted full-content to a flex-box */
+.full-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 /*added flexbox to content*/
 .content {
     width: 75%;
@@ -80,20 +85,20 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
 }
-/*converted full-content to a flex-box */
-.full-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
+/* conbined styles in .content into one style added flex: 1 so content doesnt overflow from parent*/
 .optimization {
+    flex: 1;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+}
+/* added line height for easy reading*/
+.content-text {
+    line-height: 1.5;
 }
 /* turned .benefits into a flexbox/ used gap:; to put space between elements*/
 .benefits {
@@ -109,7 +114,9 @@ p {
     display: flex;
     flex-wrap: wrap;
 }
-
+.benefit {
+    flex: 1;
+}
 /* condensed benefit h3 styles into one */
 .benefit-h {
     margin-bottom: 10px;
@@ -122,7 +129,6 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-/* conbined styles in .content into one style */
 
 /* combined image styles into one class */
 .image {
