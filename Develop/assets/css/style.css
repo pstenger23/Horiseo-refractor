@@ -7,8 +7,11 @@
 body {
     background-color: #d9dcd6;
 }
-
+/* made .header into a flexbox */
 .header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -23,11 +26,12 @@ body {
 .header h1 .seo {
     color: #d9dcd6;
 }
-
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+/*changed .header div {} to .nav {} class removed float*/
+.nav {
+    display: flex;
+    justify-content: center;
+    
+    margin: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
@@ -64,7 +68,6 @@ p {
     margin-right: 25px;
 }
 
-
 .float-right {
     float: right;
     margin-left: 25px;
@@ -72,7 +75,6 @@ p {
 
 /*added flexbox to content*/
 .content {
-    margin-left: 20px;
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -83,6 +85,15 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
 /* turned .benefits into a flexbox/ used gap:; to put space between elements*/
 .benefits {
@@ -99,8 +110,6 @@ p {
     flex-wrap: wrap;
 }
 
-/* condensed benefit lead/brand/cost into one style class */
-
 /* condensed benefit h3 styles into one */
 .benefit-h {
     margin-bottom: 10px;
@@ -108,28 +117,23 @@ p {
 }
 /*condensed benefit images into one style class*/
 .benefit-img {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     margin: 10px auto;
     max-width: 150px;
 }
 /* conbined styles in .content into one style */
-.optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
+
 /* combined image styles into one class */
 .image {
     max-height: 200px;
 }
+
+/* combined .content h2 elements into one style */
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
 
 .footer {
     padding: 30px;
