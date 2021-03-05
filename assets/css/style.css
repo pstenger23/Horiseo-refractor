@@ -23,7 +23,7 @@ body {
     font-size: 48px;
 }
 
-.header h1 .seo {
+.seo {
     color: #d9dcd6;
 }
 /*changed .header div {} to .nav {} class removed float/padding*/
@@ -61,15 +61,17 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/*moved max-height into float properties*/
 .float-left {
     float: left;
     margin-right: 25px;
+    max-height: 200px;
 }
 
 .float-right {
     float: right;
     margin-left: 25px;
+    max-height: 200px;
 }
 
 /*created .full-content class/converted full-content to a flex-box */
@@ -131,9 +133,7 @@ p {
 }
 
 /* combined image styles into one class */
-.image {
-    max-height: 200px;
-}
+
 
 /* combined .content h2 elements into one style */
 .content h2 {
