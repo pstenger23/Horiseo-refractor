@@ -44,6 +44,15 @@ body {
     margin-left: 25px;
 }
 
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -53,33 +62,13 @@ p {
     font-size: 16px;
 }
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-}
-/*moved max-height into float properties*/
-.float-left {
-    float: left;
-    margin-right: 25px;
-    max-height: 200px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-    max-height: 200px;
-}
-
 /*created .full-content class/converted full-content to a flex-box */
 .full-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 /*added flexbox to content*/
 .content {
     width: 75%;
@@ -99,8 +88,20 @@ p {
     color: #ffffff;
 }
 /* added line height for easy reading*/
-.content-text {
+.coptimization div {
     line-height: 1.5;
+}
+/*moved max-height into float properties*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+    max-height: 200px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+    max-height: 200px;
 }
 /* turned .benefits into a flexbox/ used gap:; to put space between elements*/
 .benefits {
@@ -120,7 +121,7 @@ p {
     flex: 1;
 }
 /* condensed benefit h3 styles into one */
-.benefit-h {
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
