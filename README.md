@@ -1,3 +1,4 @@
+![Screenshot](https://user-images.githubusercontent.com/78981011/110191172-af325f80-7dec-11eb-936b-b4d46f36e66d.jpg)
 # Code Refraction
 
 Horision Search Engine Optimization
@@ -10,4 +11,3 @@ everybody who wants to.
 
 Deployed URL -->https://pstenger23.github.io/Horiseo-refractor/
 
-./assets/images/screenshot.jpg 
