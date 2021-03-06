@@ -8,6 +8,6 @@ both the HTML and the CSS, as well as fixing a few bugs within the code.
 Now you will find a homepage that is optimized and accessible for 
 everybody who wants to.
 
-Deployed URL --> <a href=https://pstenger23.github.io/Horiseo-refractor/ > <--
+Deployed URL -->https://pstenger23.github.io/Horiseo-refractor/
 
-<img src="./assets/images/screenshot.jpg" />
+./assets/images/screenshot.jpg 
